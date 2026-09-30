@@ -1,0 +1,12 @@
+{
+  "name": "veritas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npx http-server -c-1 -p 8000\"",
+    "start": "node server/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
